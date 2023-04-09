@@ -82,10 +82,10 @@ while True:
     elif action.lower() == "пасс":
         break
 
-  if player.total() <= 21:
-    while dealer.total() < 17:
-      dealer.add_card(deck.deal())
-      print(dealer)
+    if player.total() <= 21:
+        while dealer.total() < 17:
+            dealer.add_card(deck.deal())
+        print(dealer)
 
     print(player)
     print(dealer)
@@ -96,3 +96,5 @@ while True:
         print("Дилер выиграл!")
     else:
         print("Ничья!")
+
+# конец
